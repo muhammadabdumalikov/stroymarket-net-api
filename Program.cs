@@ -27,9 +27,11 @@ List<Product> products = new()
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/products", () => products);
+var ProductGroup = app.MapGroup("/product");
 
-app.MapGet("/products/{id}", (int id) =>
+ProductGroup.MapGet("", () => products);
+
+ProductGroup.MapGet("/{id}", (int id) =>
 {
   Product? product = products.Find(game => game.Id == id);
 
@@ -42,7 +44,7 @@ app.MapGet("/products/{id}", (int id) =>
 }
 ).WithName(GetProductEndpoint);
 
-app.MapPost("/products", (Product product) =>
+ProductGroup.MapPost("", (Product product) =>
 {
   product.Id = products.Max(product => product.Id) + 1;
   products.Add(product);

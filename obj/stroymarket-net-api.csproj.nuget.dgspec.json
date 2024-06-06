@@ -1,27 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "E:\\stroymarket-net-api\\stroymarket-net-api.csproj": {}
+    "/Users/unicon/Desktop/Projects/stroymarket-net-api/stroymarket-net-api.csproj": {}
   },
   "projects": {
-    "E:\\stroymarket-net-api\\stroymarket-net-api.csproj": {
+    "/Users/unicon/Desktop/Projects/stroymarket-net-api/stroymarket-net-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\stroymarket-net-api\\stroymarket-net-api.csproj",
+        "projectUniqueName": "/Users/unicon/Desktop/Projects/stroymarket-net-api/stroymarket-net-api.csproj",
         "projectName": "stroymarket-net-api",
-        "projectPath": "E:\\stroymarket-net-api\\stroymarket-net-api.csproj",
-        "packagesPath": "C:\\Users\\burak\\.nuget\\packages\\",
-        "outputPath": "E:\\stroymarket-net-api\\obj\\",
+        "projectPath": "/Users/unicon/Desktop/Projects/stroymarket-net-api/stroymarket-net-api.csproj",
+        "packagesPath": "/Users/unicon/.nuget/packages/",
+        "outputPath": "/Users/unicon/Desktop/Projects/stroymarket-net-api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\burak\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/unicon/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.308/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
         }
       }
     }
