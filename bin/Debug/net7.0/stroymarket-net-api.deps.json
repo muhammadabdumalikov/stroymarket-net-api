@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "stroymarket-net-api/1.0.0": {
+        "runtime": {
+          "stroymarket-net-api.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "stroymarket-net-api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

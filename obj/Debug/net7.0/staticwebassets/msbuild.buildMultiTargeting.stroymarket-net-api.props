@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\stroymarket-net-api.props" />
+</Project>
