@@ -1,3 +1,4 @@
+using stroymarket_net_api.Dtos;
 using stroymarket_net_api.Entities;
 using stroymarket_net_api.Repositories;
 
@@ -9,13 +10,11 @@ public static class ProductEndpoints
 
     public static RouteGroupBuilder MapProductsEndpoints(this IEndpointRouteBuilder routes)
     {
-        ProductRepository repository = new();
-
         var ProductGroup = routes.MapGroup("/product").WithParameterValidation();
 
-        ProductGroup.MapGet("", () => repository.GetAll());
+        ProductGroup.MapGet("", (IProductRepository repository) => repository.GetAll().Select(product => product.AsDto()));
 
-        ProductGroup.MapGet("/{id}", (int id) =>
+        ProductGroup.MapGet("/{id}", (IProductRepository repository, int id) =>
         {
             Product? product = repository.GetOne(id);
 
@@ -28,8 +27,16 @@ public static class ProductEndpoints
         }
         ).WithName(GetProductEndpoint);
 
-        ProductGroup.MapPost("", (Product product) =>
+        ProductGroup.MapPost("", (IProductRepository repository, CreateProductDto createProductDto) =>
         {
+            Product product = new()
+            {
+                NameUz = createProductDto.NameUz,
+                NameRu = createProductDto.NameRu,
+                Price = createProductDto.Price,
+                ImageUri = createProductDto.ImageUri
+            };
+
             repository.Create(product);
 
             return Results.CreatedAtRoute(GetProductEndpoint, new { id = product.Id }, product);

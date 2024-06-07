@@ -4,7 +4,7 @@ namespace stroymarket_net_api.Entities
 {
     public class Product
     {
-        public required int Id { get; set; }
+        public int Id { get; set; }
         [Required]
         [StringLength(50)]
         public required string NameUz { get; set; }

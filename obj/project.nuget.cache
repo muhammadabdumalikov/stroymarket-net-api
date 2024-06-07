@@ -1,16 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "nrPIkulKvfE=",
+  "dgSpecHash": "MpCOO9kd67F4c8T09uPLGAXwcaV5zHBmcy0S0fTch8lMplantaHz/SoEQ6j53P5galfwi6w2qqkziBmiXyrIsw==",
   "success": true,
-  "projectFilePath": "E:\\stroymarket-net-api\\stroymarket-net-api.csproj",
+  "projectFilePath": "/Users/unicon/Desktop/Projects/stroymarket-net-api/stroymarket-net-api.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\burak\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
-    "C:\\Users\\burak\\.nuget\\packages\\minimalapis.extensions\\0.11.0\\minimalapis.extensions.0.11.0.nupkg.sha512",
-    "C:\\Users\\burak\\.nuget\\packages\\minivalidation\\0.8.0\\minivalidation.0.8.0.nupkg.sha512",
-    "C:\\Users\\burak\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\burak\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512",
-    "C:\\Users\\burak\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\burak\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512"
+    "/Users/unicon/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/unicon/.nuget/packages/minimalapis.extensions/0.11.0/minimalapis.extensions.0.11.0.nupkg.sha512",
+    "/Users/unicon/.nuget/packages/minivalidation/0.8.0/minivalidation.0.8.0.nupkg.sha512"
   ],
   "logs": []
 }

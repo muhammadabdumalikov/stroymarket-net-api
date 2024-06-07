@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using stroymarket_net_api.Entities;
 
 namespace stroymarket_net_api.Repositories;
 
-public class ProductRepository
+public class ProductRepository : IProductRepository
 {
     private readonly List<Product> products = new()
     {
