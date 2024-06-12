@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{3D9D8284-878C-45B9-BEEA-134B6C33F4EF}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.stroymarket-net-api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Data/ProductStoreContext.cs">
+    <Files>
+      <File FileName="Data/ProductStoreContext.cs" Line="7" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="stroymarket-net-api">
+            <Node name="stroymarket-net-api">
+              <Node name="Data" expanded="True">
+                <Node name="ProductStoreContext.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
