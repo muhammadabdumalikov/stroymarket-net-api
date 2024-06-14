@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("stroymarket-net-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a495cd2b9d4a783debfaac5c6f2853d27062a336")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a02e085efebe24d5ab0ae1c9d1fec73f1cf6ee0")]
 [assembly: System.Reflection.AssemblyProductAttribute("stroymarket-net-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("stroymarket-net-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

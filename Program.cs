@@ -3,10 +3,8 @@ using stroymarket_net_api.Endpoints;
 using stroymarket_net_api.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSingleton<IProductRepository, ProductRepositoryX>();
 
-var connectionStr = builder.Configuration.GetConnectionString("ProductStoreContext");
-builder.Services.AddNpgsql<ProductStoreContext>(connectionStr);
+builder.Services.AddRepositories(builder.Configuration);
 
 var app = builder.Build();
 

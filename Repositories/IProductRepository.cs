@@ -4,9 +4,9 @@ namespace stroymarket_net_api.Repositories;
 
 public interface IProductRepository
 {
-    void Create(Product product);
-    void Delete(int id);
-    Product? GetOne(int id);
-    IEnumerable<Product> GetAll();
-    void Update(Product product);
+    Task CreateAsync(Product product);
+    Task DeleteAsync(int id);
+    Task<Product?> GetOneAsync(int id);
+    Task<IEnumerable<Product>> GetAllAsync();
+    Task Update(Product product);
 }
