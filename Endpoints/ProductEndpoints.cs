@@ -1,3 +1,4 @@
+using stroymarket_net_api.Authorization;
 using stroymarket_net_api.Dtos;
 using stroymarket_net_api.Entities;
 using stroymarket_net_api.Repositories;
@@ -12,11 +13,12 @@ public static class ProductEndpoints
     {
         var ProductGroup = routes.MapGroup("/product").WithParameterValidation();
 
-        ProductGroup.MapGet("", (IProductRepository repository) => repository.GetAll().Select(product => product.AsDto()));
+        ProductGroup.MapGet("", async (IProductRepository repository) => (await repository.GetAllAsync()).Select(product => product.AsDto()))
+        .RequireAuthorization(Policies.WriteAccess);
 
-        ProductGroup.MapGet("/{id}", (IProductRepository repository, int id) =>
+        ProductGroup.MapGet("/{id}", async (IProductRepository repository, int id) =>
         {
-            Product? product = repository.GetOne(id);
+            Product? product = await repository.GetOneAsync(id);
 
             if (product == null)
             {
@@ -25,9 +27,10 @@ public static class ProductEndpoints
 
             return Results.Ok(product);
         }
-        ).WithName(GetProductEndpoint);
+        ).WithName(GetProductEndpoint)
+        .RequireAuthorization(Policies.ReadAccess);
 
-        ProductGroup.MapPost("", (IProductRepository repository, CreateProductDto createProductDto) =>
+        ProductGroup.MapPost("", async (IProductRepository repository, CreateProductDto createProductDto) =>
         {
             Product product = new()
             {
@@ -37,10 +40,11 @@ public static class ProductEndpoints
                 ImageUri = createProductDto.ImageUri
             };
 
-            repository.Create(product);
+            await repository.CreateAsync(product);
 
             return Results.CreatedAtRoute(GetProductEndpoint, new { id = product.Id }, product);
-        });
+        })
+        .RequireAuthorization();
 
         return ProductGroup;
 

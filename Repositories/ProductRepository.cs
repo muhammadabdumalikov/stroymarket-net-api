@@ -13,28 +13,28 @@ public class ProductRepository : IProductRepository
         this.dbContext = dbContext;
     }
 
-    public void Create(Product product)
+    public async Task CreateAsync(Product product)
     {
         dbContext.Products.Add(product);
-        dbContext.SaveChanges();
+        await dbContext.SaveChangesAsync();
     }
 
-    public void Delete(int id)
+    public async Task DeleteAsync(int id)
     {
-        dbContext.Products.Where(product => product.Id == id).ExecuteDelete();
+        await dbContext.Products.Where(product => product.Id == id).ExecuteDeleteAsync();
     }
 
-    public IEnumerable<Product> GetAll()
+    public async Task<IEnumerable<Product>> GetAllAsync()
     {
-        return dbContext.Products.AsNoTracking().ToList();
+        return await dbContext.Products.AsNoTracking().ToListAsync();
     }
 
-    public Product? GetOne(int id)
+    public async Task<Product?> GetOneAsync(int id)
     {
-        return dbContext.Products.Find(id);
+        return await dbContext.Products.FindAsync(id);
     }
 
-    public void Update(Product product)
+    public async Task UpdateAsync(Product product)
     {
         dbContext.Products.Update(product);
     }

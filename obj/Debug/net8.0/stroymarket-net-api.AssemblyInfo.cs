@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("b2417790-8307-4a00-920f-41a7495ca125")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("stroymarket-net-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a02e085efebe24d5ab0ae1c9d1fec73f1cf6ee0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43ae6a66a39068f4a85bb5683dbfc48aa1a2dc0a")]
 [assembly: System.Reflection.AssemblyProductAttribute("stroymarket-net-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("stroymarket-net-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

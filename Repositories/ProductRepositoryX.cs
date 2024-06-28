@@ -26,29 +26,31 @@ public class ProductRepositoryX : IProductRepository
         }
     };
 
-    public IEnumerable<Product> GetAll()
+    public async Task<IEnumerable<Product>> GetAllAsync()
     {
-        return products;
+        return await Task.FromResult(products);
     }
 
-    public Product? GetOne(int id)
+    public async Task<Product?> GetOneAsync(int id)
     {
-        return products.Find(product => product.Id == id);
+        return await Task.FromResult(products.Find(product => product.Id == id));
     }
 
-    public void Create(Product product)
+    public async Task CreateAsync(Product product)
     {
         product.Id = products.Max(product => product.Id) + 1;
         products.Add(product);
+
+        await Task.CompletedTask;
     }
 
-    public void Update(Product product)
+    public async Task UpdateAsync(Product product)
     {
-
+        await Task.CompletedTask;
     }
 
-    public void Delete(int id)
+    public async Task DeleteAsync(int id)
     {
-
+        await Task.CompletedTask;
     }
 }
